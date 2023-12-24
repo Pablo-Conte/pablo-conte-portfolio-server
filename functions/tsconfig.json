@@ -1,0 +1,58 @@
+{
+  "compilerOptions": {
+    "module": "commonjs",
+    "noImplicitReturns": true,
+    "noUnusedLocals": true,
+    "outDir": "lib",
+    "sourceMap": true,
+    "rootDirs": [
+      "src",
+      "tests"
+    ],
+    "baseUrl": "src",
+    "target": "es2017",
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
+    "paths": {
+      "@modules/*": [
+        "modules/*"
+      ],
+      "@settings/*": [
+        "settings/*"
+      ],
+      "@shared/*": [
+        "shared/*"
+      ],
+      "@errors/*": [
+        "shared/errors/*"
+      ],
+      "@utils/*": [
+        "utils/*"
+      ],
+      "@src/*": [
+        "*"
+      ],
+      "@root/*": [
+        "../*"
+      ],
+      "@tests/*": [
+        "../tests/*"
+      ],
+      "@prisma/*": [
+        "../prisma/*"
+      ]
+    },
+    "resolveJsonModule": true,
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "strict": false,
+    "strictPropertyInitialization": false,
+    "skipLibCheck": true
+  },
+  "compileOnSave": true,
+  "include": [
+    "src",
+    "index.ts",
+    "tests"
+  ]
+}
